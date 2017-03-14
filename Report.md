@@ -159,10 +159,14 @@ Now, we apply the model to the original testing data set downloaded from the dat
 
 ## Appendix: Figures
 
-    Correlation Matrix Visualization
+1. Correlation Matrix Visualization
     corrPlot <- cor(trainData[, -length(names(trainData))])
     corrplot(corrPlot, method="color")
-    plot of chunk unnamed-chunk-12 2. Decision Tree Visualization
+    plot of chunk unnamed-chunk-12 
+    
+    
+ 
+ 2. Decision Tree Visualization
 
     treeModel <- rpart(classe ~ ., data=trainData, method="class")
     prp(treeModel) # fast plot
